@@ -18,6 +18,10 @@ bot.on("message", message => {
     if (message.content === "ping"){
         message.reply("pong")
         console.log("ping pong")
+    } else if (message.content === ("ching")) {
+        message.reply ("Chang!");
+    }else if (message.content === (":hearth:")) {
+        message.reply ("Pour qui est ce jolie coeur?");
     }
 
     if (message.content === prefix + "help"){
