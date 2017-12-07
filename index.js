@@ -22,6 +22,8 @@ bot.on("message", message => {
         message.reply ("Chang!");
     }else if (message.content === (":hearth:")) {
         message.reply ("Pour qui est ce jolie coeur?");
+    }else if (message.content === ("re")){
+        message.reply ("Beuh")
     }
 
     if (message.content === prefix + "help"){
