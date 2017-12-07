@@ -12,7 +12,8 @@ bot.on("ready", function(){
     console.log("Le bot a bien été connecté");
 })
 
-bot.login(process.env.TOKEN);
+bot.login(process.env.TOKEN)
+//bot.login(process.env.TOKEN);
 
 bot.on("message", message => {
     if (message.content === "ping"){
@@ -24,6 +25,8 @@ bot.on("message", message => {
         message.reply ("Pour qui est ce jolie coeur?");
     }else if (message.content === ("re")){
         message.reply ("Beuh")
+    }else if (message.content === ("love")){
+        message.reply ("Moi aussi je t'aime")
     }
 
     if (message.content === prefix + "help"){
@@ -31,6 +34,7 @@ bot.on("message", message => {
         .setColor("#56FE02")
         .addField("Commandes du bot !", "  -/help : Affiche les commandes du bot !")
         .addField("Interaction", "ping : Le bot répond pong !")
+        .addField("LOVE", "love : réponds 'moi aussi je t'aime' ")
         .setFooter("C'est tout pour ce embed !")
         message.channel.sendEmbed(help_embed);
        // message.channel.sendMessage("Voici les commandes du bot :\n -/help pour afficher les commandes");
