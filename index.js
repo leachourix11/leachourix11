@@ -27,6 +27,8 @@ bot.on("message", message => {
         message.reply ("Beuh")
     }else if (message.content === ("love")){
         message.reply ("Moi aussi je t'aime")
+    }else if (message.content === ("/tg Arkange")){
+        message.channel.send ("Dis donc Arkange,tu pourrais pas fermer ta geule?")
     }
 
     if (message.content === prefix + "help"){
